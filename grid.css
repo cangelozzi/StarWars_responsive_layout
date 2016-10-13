@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+
+.top_row::before, .top_row::after { 
+	display: table;
+	content: '';
+ }
+
+section::before, section::after {
+	display: table;
+	content: '';
+}
+
+.top_row::after {
+	clear: both;
+}
+
+section::after {
+	clear: both;
+}
+
+.card, .title {
+	float: left;
+	padding-right: 1.04166666%;
+	padding-left: 1,04166666%;
+}
+
+.card, .title {
+	width: 100%;
+} 
+
+@media only screen and (min-width: 640px) {
+ .card {
+    width: 33.33%;
+  }
+
+.title {
+	width: 100%;
+	}
+}
